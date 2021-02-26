@@ -1,4 +1,4 @@
-# README TEMA 1 - APD 2020
+# Generare paralela de fractali folosind multimile Mandelbrot si Julia - APD 2020
 
 ## Explicatie Implementare
 
@@ -22,4 +22,5 @@ Am ales sa paralelizez primul for din primul set retul ramanand neschimbat fata 
 Urmatorul pas am paralelizat transformarea in coordonate ecran calculand in functie de noile limite forul urmator astfel in loc de N din formul 1 am folosit **height / 2**. M-am folosit de alta bariera pentru sincronizare, iar screirea am facuto cu un singur thred in folosind functia de **write_ouput_file**.  
 Am continuat cu implemntarea algoritmului Mandelbrot care urmeza aceiasi pasi diferand doar prin paramentrii folositi (_resultM, widthM, heightM_).
 
-In continuare in programul principal dau join la threduri, distrug bariera si eliberez memoria.
+In continuare in programul principal dau join la threduri, distrug bariera si eliberez memoria.  
+### [Enunt](https://github.com/CristiSandu/Parallel-generation-of-fractals/blob/main/Tema1.pdf)
