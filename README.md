@@ -3,8 +3,8 @@
 ## Explicatie Implementare
 
 In aceasta tema am implementat executai in paralel a algoritmilor Julia si Mandelbrot care genereaza multimi.
-M-am folosit **#include <pthread.h>** pentru paralelizare, iar ca si element de sincroniare am folosit **pthread_barrier_t**.  
-Im main am citit datele pe rand si am calculat separat pentru fiecare multime parametri de width, height si rezult pe care le-am declarat globale.
+M-am folosit de **#include <pthread.h>** pentru paralelizare, iar ca si element de sincroniare am folosit **pthread_barrier_t**.  
+In main am citit datele pe rand si am calculat separat pentru fiecare multime parametri de width, height si rezult pe care le-am declarat globale.
 Imediat dupa am initilaizat bariera cu nr de threduri citite (P) si am creeat pe rand fiecare thread folosind functia **thread_function**.
 
 In **thread_function** am inceput cu algoritmul Julia. Am facut impartirea pe threduri la fel ca la laborator.
